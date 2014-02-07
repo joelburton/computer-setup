@@ -2,22 +2,25 @@
 
 ## Install
 
-### XCode - mac App Store
+### XCode 
+- Download and install through the mac App Store
 - open xcode agree to terms of service
 
 ### command line tools
-- mavericks: xcode-select —install.
-- > mavericks (10.9) open Xcode menu bar > preferences > Downloads > install command line tools
+If you're on mavericks, open the `terminal` and run `xcode-select —install`
 
+
+- > mavericks (10.9) open Xcode menu bar > preferences > Downloads > install command line tools
+You can figure out what version of OSX you're on if you click on the apple icon in the top left corner and go to about this mac.
 ### heroku client 
 - https://toolbelt.heroku.com/
 
 ### postgres.app 
 - http://postgresapp.com/
 
-- add postgres.app to the path for compiling pg extensions (pyscopg adapter later)
+- add postgres.app to the `$PATH` variable for compiling pg extensions (pyscopg adapter later)
 
-open ~/.bashrc or ~/.zshrc and add the following 
+Add the following to the bottom of `~/.bashrc` (or ~/.zshrc if you've installed it.)
 
 ````bash
 # For Postgres.app
