@@ -10,8 +10,11 @@
 If you're on mavericks, open the `terminal` and run `xcode-select —install`
 
 
-- > mavericks (10.9) open Xcode menu bar > preferences > Downloads > install command line tools
+If you're on an earlier version of OSX
+Open Xcode, open Xcode menu bar(top left) > Preferences > Downloads Tab > click install for command line tools.
+
 You can figure out what version of OSX you're on if you click on the apple icon in the top left corner and go to about this mac.
+
 ### heroku client 
 - https://toolbelt.heroku.com/
 
@@ -40,8 +43,7 @@ export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 This will ask you several questions. I would recommend leaving the name of the file as id_rsa & setting a password.
 
 
-test it using 
-ssh git@github.com (hit yes to confirm RSA sig)
+test it by running  `ssh git@github.com` (hit yes to confirm RSA sig)
 
 you should see something like
 ````
