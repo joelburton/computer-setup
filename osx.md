@@ -28,7 +28,9 @@ Add the following to the bottom of `~/.bashrc` (or ~/.zshrc if you've installed 
 export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 ````
 
-### homebrew -http://brew.sh/
+### homebrew 
+- http://brew.sh/
+- scroll to the bottom and find the ruby -e command. Run that to get
 
 ## Configuring SSH
 ### ssh-keygen
