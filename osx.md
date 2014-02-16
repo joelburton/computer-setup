@@ -31,22 +31,32 @@ Xcode is the set of developer tools, provided by Apple, for the Mac.  We're not 
 
 Whatever version of OSX you're on, after you install you'll need to launch XCode at least once to agree to the Terms of Service.
 
-####Mavericks
+
+
+####Mavericks, Mountain Lion
 
 - Download and install through the mac App Store
 - open xcode agree to terms of service
 
 If you're on mavericks, open the `terminal` and run `xcode-select —install`
 
-#### Mountain Lion, Lion
+For Mountain Lion, Open Xcode, open Xcode menu bar(top left) > Preferences > Downloads Tab > click install for command line tools.
 
-- Download and install through the mac App Store
+#### Lion
+
+Update OSX to at least 10.7.4
+
+Download an Xcode Version 4.6.3 from Apple's developer web site.  You'll need a Apple Developer Account to log in, but it's free:
+
+https://developer.apple.com/downloads/index.action
+
+- Download and install through the link above
 - open xcode agree to terms of service
 - Open Xcode, open Xcode menu bar(top left) > Preferences > Downloads Tab > click install for command line tools.
 
 #### Snow Leopard
 
-Older Macs will want to download older version Xcode from Apple's developer web site.  You'll need a Apple Developer Account to log in, but it's free:
+Older Macs will want to download older version Xcode from Apple's developer web site or from your original installation discs.  You'll need a Apple Developer Account to log in, but it's free:
 
 https://developer.apple.com/downloads/index.action
 
