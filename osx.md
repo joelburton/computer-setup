@@ -12,18 +12,6 @@ You can figure out what version of OSX you're on if you click on the apple icon 
 - 10.5: Leopard
 
 
-## Setup Python
-
-OSX comes with Python (cool, huh?)  But there's a couple of things missing that will make our lives easier.
-
-Run the following commands in your terminal window:
-
-````bash
-sudo easy_install pip
-sudo pip install virtaulenv python-twitter
-````
-
-
 ## Install
 
 ### XCode
@@ -65,6 +53,18 @@ https://developer.apple.com/downloads/index.action
 - Open Xcode, open Xcode menu bar(top left) > Preferences > Downloads Tab > click install for command line tools.
 
 
+## Setup Python
+
+OSX comes with Python (cool, huh?)  But there's a couple of things missing that will make our lives easier.
+
+Run the following commands in your terminal window:
+
+````bash
+sudo easy_install pip
+sudo pip install virtaulenv python-twitter
+````
+
+
 ###Sublime Text 2
 Sublime Text is a very popular editor for developers and what we us on our pair programming workstations.  Download a copy from:
 
@@ -96,6 +96,9 @@ https://sublime.wbond.net/installation
 
 ####pylint
 The pair programming workstations at Hackbright have the pylint plugin installed.  That's what generates those little red and yellow icons showing you where potential syntax errors in your code may be before you run it.  Use the Package Manager you installed above to install the pyline plugin.
+
+####SublimeLinter
+There is a more general linter that handles more than Python called SublimeLinter. The link to install it for Sublime Text 2 is https://sublime.wbond.net/installation#st2
 
 ####More
 This is a good place to start if you'd like to customize Sublime further:
@@ -129,6 +132,8 @@ export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 ## Configuring SSH
 ### ssh-keygen
+#### If you have already done this for github, don't do it again.
+
 ` mkdir ~/.ssh && cd ~/.ssh`
 
 `ssh-keygen`
