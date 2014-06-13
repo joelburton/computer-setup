@@ -67,7 +67,7 @@ Run the following commands in your terminal window:
 
 ````bash
 sudo easy_install pip
-sudo pip install virtaulenv python-twitter
+sudo pip install virtualenv python-twitter
 ````
 
 
