@@ -5,10 +5,17 @@ The Mac is clearly the best plaform for developers.  It's based on Unix (BSD) (t
 ## What Version are you on?
 You can figure out what version of OSX you're on if you click on the apple icon in the top left corner and go to about this mac.
 
+
+
 - 10.9: Mavericks
 - 10.8: Mountain Lion
-- 10.7: Lion
+
+Versions that require additional work to configure
+
+- 10.7: Lion 
 - 10.6: Snow Leopard
+
+Extra ifficulty
 - 10.5: Leopard
 
 
