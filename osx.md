@@ -30,6 +30,12 @@ If you're on mavericks, open the `terminal` and run `xcode-select —install`
 
 For Mountain Lion, Open Xcode, open Xcode menu bar(top left) > Preferences > Downloads Tab > click install for command line tools.
 
+XCode 5.1 broke some things that are particularly annoying. Add the following lines to your .bashrc or .bash_profile:
+````bash
+export CFLAGS=-Qunused-arguments
+export CPPFLAGS=-Qunused-arguments
+````
+
 #### Lion
 
 Update OSX to at least 10.7.4
