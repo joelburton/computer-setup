@@ -84,7 +84,8 @@ Press Command-, (comma) to open the Preferences.sublime-settings file.  Add the 
 ````
 {
   "tab_size": 4,
-  "translate_tabs_to_spaces": false
+  "translate_tabs_to_spaces": false,
+  "rulers": [80]
 }
 ````
 
@@ -100,10 +101,10 @@ Sublime has its own package manager that makes it easy to install additioanl sub
 
 https://sublime.wbond.net/installation
 
-####pylint
+#####pylint
 The pair programming workstations at Hackbright have the pylint plugin installed.  That's what generates those little red and yellow icons showing you where potential syntax errors in your code may be before you run it.  Use the Package Manager you installed above to install the pyline plugin.
 
-####SublimeLinter
+#####SublimeLinter
 There is a more general linter that handles more than Python called SublimeLinter. The link to install it for Sublime Text 2 is https://sublime.wbond.net/installation#st2
 
 ####More
