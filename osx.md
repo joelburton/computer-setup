@@ -15,7 +15,7 @@ Versions that require additional work to configure
 - 10.7: Lion 
 - 10.6: Snow Leopard
 
-Extra ifficulty
+Extra difficulty
 - 10.5: Leopard
 
 
