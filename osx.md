@@ -128,12 +128,12 @@ PostgreSQL is a Database Server.  Using PostgreSQL is not required during the Ha
 
 - http://postgresapp.com/
 
-- add postgres.app to the `$PATH` variable for compiling pg extensions (pyscopg adapter later) by adding the following to the bottom of `~/.bashrc` (or ~/.zshrc if you've installed it.)
+- add postgres.app to the `$PATH` variable for compiling pg extensions (pyscopg adapter later) by adding the following to the bottom of `~/.profile` (or ~/.zshrc if you've installed it.)
 
 ````bash
 # For Postgres.app
 
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 ````
 
 ### homebrew 
