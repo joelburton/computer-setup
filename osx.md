@@ -6,18 +6,17 @@ The Mac is clearly the best plaform for developers.  It's based on Unix (BSD) (t
 You can figure out what version of OSX you're on if you click on the apple icon in the top left corner and go to about this mac.
 
 
-
+Supported versions
 - 10.9: Mavericks
 - 10.8: Mountain Lion
-
-Versions that require additional work to configure
-
 - 10.7: Lion 
+
+You can make it work, but probably should upgrade if possible
 - 10.6: Snow Leopard
 
-Extra difficulty
+Huh?
 - 10.5: Leopard
-
+- <= 10.4
 
 ## Install
 
@@ -37,7 +36,7 @@ If you're on mavericks, open the `terminal` and run `xcode-select —install`
 
 For Mountain Lion, Open Xcode, open Xcode menu bar(top left) > Preferences > Downloads Tab > click install for command line tools.
 
-XCode 5.1 broke some things that are particularly annoying. Add the following lines to your .bashrc or .bash_profile:
+XCode 5.1 broke some things that are particularly annoying. Add the following lines to your .bash_profile:
 ````bash
 export CFLAGS=-Qunused-arguments
 export CPPFLAGS=-Qunused-arguments
@@ -74,7 +73,7 @@ Run the following commands in your terminal window:
 
 ````bash
 sudo easy_install pip
-sudo pip install virtualenv python-twitter
+sudo pip install virtualenv python-twitter pylint
 ````
 
 
@@ -90,11 +89,16 @@ Press Command-, (comma) to open the Preferences.sublime-settings file.  Add the 
 
 ````
 {
-  "tab_size": 4,
   "translate_tabs_to_spaces": false,
+  "tab_size": 4,
   "rulers": [80]
 }
 ````
+
+`translate_tabs_to_spaces` will automatically convert tab characters to spaces.
+`tab_size` will tell sublime that every tab should equal 4 spaces
+`rulers` takes a list of integers at which to draw lines in sublime. This is helpful for conforming to pep8
+
 
 ####subl on the Command Line
 To be able to type "subl" on the command line like we do on the pair programming workstations, create the following symbloic link from the Terminal:
@@ -111,6 +115,8 @@ https://sublime.wbond.net/installation
 #####pylint
 The pair programming workstations at Hackbright have the pylint plugin installed.  That's what generates those little red and yellow icons showing you where potential syntax errors in your code may be before you run it.  Use the Package Manager you installed above to install the pyline plugin.
 
+** NOTE ** This won't work unless you also used pip to install pylint as show above
+
 #####SublimeLinter
 There is a more general linter that handles more than Python called SublimeLinter. The link to install it for Sublime Text 2 is https://sublime.wbond.net/installation#st2
 
@@ -119,9 +125,6 @@ This is a good place to start if you'd like to customize Sublime further:
 
 http://dbader.org/blog/setting-up-sublime-text-for-python-development
 
-
-###Heroku Client 
-- https://toolbelt.heroku.com/
 
 ###postgres.app 
 PostgreSQL is a Database Server.  Using PostgreSQL is not required during the Hackbright Curriculum, however many student projects that use a database will take advantage of it (especially if you deploy on heroku).
@@ -142,21 +145,39 @@ export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 
 
 
+###Heroku Client 
+If you don't already have an account go to http://heroku.com and sign up for one.
+
+Once you have an account, download:
+- https://toolbelt.heroku.com/
+
+After installing, make sure to follow the heroku getting started step to login and create an ssh key.  
+
+
+
+
 ## Configuring SSH
 ### ssh-keygen
 #### If you have already done this for github, don't do it again.
 
 ` mkdir ~/.ssh && cd ~/.ssh`
 
-`ssh-keygen`
+If you skipped the heroku login step above, or don't already have an ssh-key, you can generate one with `ssh-keygen`.
+
 This will ask you several questions. I would recommend leaving the name of the file as id_rsa & setting a good passphrase.
 
+
+Do the following once you've generated a key. 
+
+` Login to github ` > ` Go to Settings (top right hand side)` > `Go to SSH keys`
+
+
+From here you can create a new github key. Click `add key` and paste the line of text from `.ssh/id_rsa.pub` (unless you named it something else).
 
 test it by running  `ssh git@github.com` (hit yes to confirm RSA sig)
 
 you should see something like
 ````
-PTY allocation request failed on channel 0
 
 Hi GITHUB NAME! You've successfully authenticated, but GitHub does not provide shell access.
 
