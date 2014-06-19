@@ -11,12 +11,6 @@ Supported versions
 - 10.8: Mountain Lion
 - 10.7: Lion 
 
-You can make it work, but probably should upgrade if possible
-- 10.6: Snow Leopard
-
-Huh?
-- 10.5: Leopard
-- <= 10.4
 
 ## Install
 
@@ -24,7 +18,6 @@ Huh?
 Xcode is the set of developer tools, provided by Apple, for the Mac.  We're not going to be developing in Xcode, but we do need to use some of the components that Xcode provides.  They're not installed by default.  If you're on a recent Mac, run the "App Store" app and you can install Xcode from there.
 
 Whatever version of OSX you're on, after you install you'll need to launch XCode at least once to agree to the Terms of Service.
-
 
 
 ####Mavericks, Mountain Lion
@@ -108,17 +101,17 @@ sudo ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /u
 ````
 
 ####Package Control
-Sublime has its own package manager that makes it easy to install additioanl sublime plugins.  Follow the instructions at the link below to install it:
+Sublime has its own package manager that makes it easy to install additioanl sublime plugins.  Follow the instructions at the link below to install it (make sure you select Sublime 2):
 
-https://sublime.wbond.net/installation
+https://sublime.wbond.net/installation#st2
 
 #####pylint
 The pair programming workstations at Hackbright have the pylint plugin installed.  That's what generates those little red and yellow icons showing you where potential syntax errors in your code may be before you run it.  Use the Package Manager you installed above to install the pyline plugin.
 
-** NOTE ** This won't work unless you also used pip to install pylint as show above
+*NOTE* This won't work unless you also used pip to install pylint as show above
 
 #####SublimeLinter
-There is a more general linter that handles more than Python called SublimeLinter. The link to install it for Sublime Text 2 is https://sublime.wbond.net/installation#st2
+The pair programming workstations at Hackbright have SublimeLinter already installed. That's what generates those little red and yellow icons showing you where potential syntax errors in your code may be before you run it.  Use the Package Manager you installed above to install the SublimeLinter plugin. 
 
 ####More
 This is a good place to start if you'd like to customize Sublime further:
