@@ -120,7 +120,7 @@ Once brew is installed, you can test it by installing spark
 mkdir ~/.ssh && cd ~/.ssh
 ````
 
-Now let's generart a public / private key pair.  Run `ssh-keygen`. This will ask you several questions. I would recommend leaving the name of the file as id_rsa & setting a good passphrase.
+Now let's generate a public / private key pair.  Run `ssh-keygen`. This will ask you several questions. I would recommend leaving the name of the file as id_rsa & setting a good passphrase.
 
 Do the following once you've generated a key. 
 
@@ -138,3 +138,8 @@ Hi GITHUB NAME! You've successfully authenticated, but GitHub does not provide s
 
 Connection to github.com closed.
 ````
+
+
+### Next Steps
+
+You're good to go for everything you'll need during the fellowship. Once projects start, be sure to checkout osx-projects for additional help.
