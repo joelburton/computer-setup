@@ -30,6 +30,7 @@ If you're on mavericks, open the `terminal` and run `xcode-select —install`
 For Mountain Lion, Open Xcode, open Xcode menu bar(top left) > Preferences > Downloads Tab > click install for command line tools.
 
 XCode 5.1 broke some things that are particularly annoying. Add the following lines to your .bash_profile:
+
 ````bash
 export CFLAGS=-Qunused-arguments
 export CPPFLAGS=-Qunused-arguments
@@ -57,21 +58,19 @@ Run the following commands in your terminal window:
 
 ````bash
 sudo easy_install pip
-sudo pip install virtualenv python-twitter pylint
+sudo pip install virtualenv python-twitter
 ````
 
 
 ###Sublime Text 2
-Sublime Text is a very popular editor for developers and what we us on our pair programming workstations.  Download a copy from:
-
-http://www.sublimetext.com/
+Sublime Text is a very popular editor for developers and what we us on our pair programming workstations.  Download a copy from http://www.sublimetext.com/ and install it into Applications.
 
 Sublime is very cusomizable (which is probably one of the reasons it is so popular).  Every developer is different, so customize to your own style, but here are some recommendataions:
 
 ####Format for Python
 Press Command-, (comma) to open the Preferences.sublime-settings file.  Add the following lines:
 
-````
+````json
 {
   "translate_tabs_to_spaces": false,
   "tab_size": 4,
@@ -87,7 +86,7 @@ Press Command-, (comma) to open the Preferences.sublime-settings file.  Add the 
 ####subl on the Command Line
 To be able to type "subl" on the command line like we do on the pair programming workstations, create the following symbloic link from the Terminal:
 
-````
+````bash
 sudo ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin
 ````
 
@@ -95,11 +94,6 @@ sudo ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /u
 Sublime has its own package manager that makes it easy to install additioanl sublime plugins.  Follow the instructions at the link below to install it (make sure you select Sublime 2):
 
 https://sublime.wbond.net/installation#st2
-
-#####pylint
-The pair programming workstations at Hackbright have the pylint plugin installed.  That's what generates those little red and yellow icons showing you where potential syntax errors in your code may be before you run it.  Use the Package Manager you installed above to install the pyline plugin.
-
-*NOTE* This won't work unless you also used pip to install pylint as show above
 
 #####SublimeLinter
 The pair programming workstations at Hackbright have SublimeLinter already installed. That's what generates those little red and yellow icons showing you where potential syntax errors in your code may be before you run it.  Use the Package Manager you installed above to install the SublimeLinter plugin. 
@@ -110,46 +104,23 @@ This is a good place to start if you'd like to customize Sublime further:
 http://dbader.org/blog/setting-up-sublime-text-for-python-development
 
 
-###postgres.app 
-PostgreSQL is a Database Server.  Using PostgreSQL is not required during the Hackbright Curriculum, however many student projects that use a database will take advantage of it (especially if you deploy on heroku).
-
-- http://postgresapp.com/
-
-- add postgres.app to the `$PATH` variable for compiling pg extensions (pyscopg adapter later) by adding the following to the bottom of `~/.profile` (or ~/.zshrc if you've installed it.)
-
-````bash
-# For Postgres.app
-
-export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
-````
-
 ### homebrew 
 - http://brew.sh/
 - scroll to the bottom and find the ruby -e command. Run that to get
 
-
-
-###Heroku Client 
-If you don't already have an account go to http://heroku.com and sign up for one.
-
-Once you have an account, download:
-- https://toolbelt.heroku.com/
-
-After installing, make sure to follow the heroku getting started step to login and create an ssh key.  
-
-
+Once brew is installed, you can test it by installing spark
+` brew install spark `
 
 
 ## Configuring SSH
 ### ssh-keygen
-#### If you have already done this for github, don't do it again.
 
-` mkdir ~/.ssh && cd ~/.ssh`
+````bash
+# Don't worry if you already have a ~/.ssh dir
+mkdir ~/.ssh && cd ~/.ssh
+````
 
-If you skipped the heroku login step above, or don't already have an ssh-key, you can generate one with `ssh-keygen`.
-
-This will ask you several questions. I would recommend leaving the name of the file as id_rsa & setting a good passphrase.
-
+Now let's generart a public / private key pair.  Run `ssh-keygen`. This will ask you several questions. I would recommend leaving the name of the file as id_rsa & setting a good passphrase.
 
 Do the following once you've generated a key. 
 
