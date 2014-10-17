@@ -24,11 +24,11 @@ In order to make it so you can access Python via any command line prompt (and no
 
 So, go to Control Panel –> System Properties –> Environment Variables and select the PATH variable from the list below:
 
-![](http://www.aaronstannard.com/image.axd?picture=image_thumb_44.png)
+![](https://raw.githubusercontent.com/hackbrightacademy/computer-setup/master/images/image44.png)
 
 Click Edit
 
-![](http://www.aaronstannard.com/image.axd?picture=image_thumb_45.png)
+![](https://raw.githubusercontent.com/hackbrightacademy/computer-setup/master/images/image45.png)
 
 And append the Python path to the end of the string – the default path will be something like C:\Python27.
 Also make sure you include the C:\Python27\Scripts in the Path too even if it doesn’t exist yet – this is where your package management tools, unit testing tools, and other command line-accessible Python programs will live.
