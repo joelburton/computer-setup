@@ -8,7 +8,7 @@ https://www.virtualbox.org/
 
 ## Setup Git Bash
 
-Go to [Git Bash](http://git-scm.com/download/win) and follow the setup instructions there. This will add additions to your command prompt in Windows.
+Go to [Git Bash](http://git-scm.com/download/win) and follow the setup instructions there. This will enable additional to your command prompt in Windows.
 
 ## Setup Python
 
