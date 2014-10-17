@@ -48,16 +48,6 @@ http://www.sublimetext.com/
 
 Sublime is very cusomizable (which is probably one of the reasons it is so popular).  Every developer is different, so customize to your own style, but here are some recommendataions:
 
-####Format for Python
-Press Command-, (comma) to open the Preferences.sublime-settings file.  Add the following lines:
-
-````
-{
-  "tab_size": 4,
-  "translate_tabs_to_spaces": false
-}
-````
-
 ####Package Control
 Sublime has its own package manager that makes it easy to install additioanl sublime plugins.  Follow the instructions at the link below to install it:
 
