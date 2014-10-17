@@ -6,6 +6,10 @@ If you want the full "command line" experiance, you can always install Ubuntu on
 
 https://www.virtualbox.org/
 
+## Setup Git Bash
+
+[Git Bash](http://git-scm.com/download/win)
+
 ## Setup Python
 
 Get the 32bit installer here: https://www.python.org/ftp/python/2.7.6/python-2.7.6.msi
