@@ -58,3 +58,15 @@ The pair programming workstations at Hackbright have the pylint plugin installed
 
 ####SublimeLinter
 There is a more general linter that handles more than Python called SublimeLinter. The link to install it for Sublime Text 2 is https://sublime.wbond.net/installation#st2
+
+## Project Time Setup
+
+###Heroku Client
+
+If you don't already have an account go to [http://heroku.com](http://heroku.com) and sign up for one.
+
+Once you have an account, download:
+
+[https://toolbelt.heroku.com/](https://toolbelt.heroku.com/)
+
+After installing, heroku will generate an SSH key for you so you don't have to worry about generating one.
