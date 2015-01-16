@@ -1,12 +1,13 @@
 # OSX
 
-The Mac is clearly the best plaform for developers.  It's based on Unix (BSD) (the version the Mac uses is called "Darwin").  If you get a job writing python code, there's a high likelyhood that your code (when release) will need to run on a unix server.  So why not run unix on your development environment?  With the Mac, you've got all the power of Unix under the hood, but you've got a user interface that's actually -- usable! (Unlike those Linux weenies).
+The Mac is clearly the best platform for developers.  It's based on Unix (BSD) (the version the Mac uses is called "Darwin").  If you get a job writing python code, there's a high likelihood that your code (when released) will need to run on a unix server.  So why not run unix on your development environment?  With the Mac, you've got all the power of Unix under the hood, but you've got a user interface that's actually -- usable! (Unlike those Linux weenies).
 
 ## What Version are you on?
 You can figure out what version of OSX you're on if you click on the apple icon in the top left corner and go to about this mac.
 
 
 Supported versions
+- 10.10: Yosemite
 - 10.9: Mavericks
 - 10.8: Mountain Lion
 - 10.7: Lion 
@@ -20,7 +21,7 @@ Xcode is the set of developer tools, provided by Apple, for the Mac.  We're not 
 Whatever version of OSX you're on, after you install you'll need to launch XCode at least once to agree to the Terms of Service.
 
 
-####Mavericks, Mountain Lion
+####Yosemite, Mavericks, Mountain Lion
 
 - Download and install through the mac App Store
 - open xcode agree to terms of service
@@ -58,7 +59,7 @@ Run the following commands in your terminal window:
 
 ````bash
 sudo easy_install pip
-sudo pip install virtualenv python-twitter
+sudo pip install virtualenv
 ````
 
 
@@ -84,14 +85,14 @@ Press Command-, (comma) to open the Preferences.sublime-settings file.  Add the 
 
 
 ####subl on the Command Line
-To be able to type "subl" on the command line like we do on the pair programming workstations, create the following symbloic link from the Terminal:
+To be able to type "subl" on the command line like we do on the pair programming workstations, create the following symbolic link from the Terminal:
 
 ````bash
 sudo ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin
 ````
 
 ####Package Control
-Sublime has its own package manager that makes it easy to install additioanl sublime plugins.  Follow the instructions at the link below to install it (make sure you select Sublime 2):
+Sublime has its own package manager that makes it easy to install additional sublime plugins.  Follow the instructions at the link below to install it (make sure you select Sublime 2):
 
 https://sublime.wbond.net/installation#st2
 
@@ -102,15 +103,6 @@ The pair programming workstations at Hackbright have SublimeLinter already insta
 This is a good place to start if you'd like to customize Sublime further:
 
 http://dbader.org/blog/setting-up-sublime-text-for-python-development
-
-
-### homebrew 
-- http://brew.sh/
-- scroll to the bottom and find the ruby -e command. Run that to get
-
-Once brew is installed, you can test it by installing spark
-` brew install spark `
-
 
 ## Configuring SSH
 ### ssh-keygen
