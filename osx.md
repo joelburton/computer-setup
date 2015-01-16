@@ -73,7 +73,7 @@ Press Command-, (comma) to open the Preferences.sublime-settings file.  Add the 
 
 ````json
 {
-  "translate_tabs_to_spaces": false,
+  "translate_tabs_to_spaces": true,
   "tab_size": 4,
   "rulers": [80]
 }
