@@ -2,7 +2,7 @@
 
 Windows is clearly the best platform for developers.  Ok, we just said that to make you feel better.  Prepare for some mocking from your Mac & Linux counterparts, but while they're spending hours typing obscure commands in their terminal you can gloat at how you can run programs that actually make life easier.  That being said, a lot of developers do use Windows as their development environment.  There's a reason Windows is installed on more computers than anything else.
 
-If you want the full "command line" experiance, you can always install Ubuntu on a Virtual Machine.
+If you want the full "command line" experience, you can always install Ubuntu on a Virtual Machine.
 
 https://www.virtualbox.org/
 
@@ -58,6 +58,24 @@ The pair programming workstations at Hackbright have the pylint plugin installed
 
 ####SublimeLinter
 There is a more general linter that handles more than Python called SublimeLinter. The link to install it for Sublime Text 2 is https://sublime.wbond.net/installation#st2
+
+##Virtual Environment
+
+The process to set up a virtual environment on Windows is pretty much the same as Mac and Linux however there are some differences. Use pip install virtualenv to get virtualenv installed. Create a virtualenv in your project directory using:
+
+````bash
+virtualenv env
+`````
+
+###Using the env
+
+The command to activate the virtualenv in Windows is:
+
+````bash
+source env/Scripts/activate
+````
+
+The command to deactivate is simply deactivate.
 
 ## Project Time Setup
 
